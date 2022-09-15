@@ -2,6 +2,7 @@ const mobMenu = document.querySelector('.menu-bars');
 const overlayMenu = document.querySelector('#nav-list');
 
 mobMenu.addEventListener('click', () => {
+  mobMenu.classList.add('active');
   mobMenu.classList.toggle('active');
   overlayMenu.classList.toggle('active');
   document.querySelector('.fa-envelope').style.display = 'none';
